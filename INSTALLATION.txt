@@ -7,8 +7,36 @@ FONT INSTALLATION INSTRUCTIONS
 	•	Windows Vista
 	•	Windows XP
 	•	Windows 2000
-	
 
+
+
+MAC OS X FOR NATIVE APPLICATIONS
+
+Mac OS X has native support for Type 1 and OpenType fonts, which can be installed just like other font type on OS X. However, fonts installed in OS X system locations are not available to “Classic” applications (see section below). Fonts installed in the OS X native environment can be accessed by (a) any user or (b) just by an individual user.
+	1.	Before installing your fonts, quit all active applications.
+	2.	Locate the folder that contains the fonts you want to install.
+	3.	Copy or move all the font files from their individual font folders into either of the following locations:
+		(Note that the fonts must be loose in the destination folder, not in a subfolder.)
+			 (a) <Volume>/Library/Fonts/ 
+	    Note: you must be logged on as an “Administrator” to place fonts in this location. Fonts in this location can be used by any user. 
+	    	(b) <Volume>/Users/<username>/Library/Fonts/
+	     Note: fonts in this location can be used only by the specified user.
+	    
+	    An alternative is to use the Font Book application which comes with OS X ... simply type "font book" into Spotlight and click on the application.
+	    you will be able to preview and install fonts quickly and easily by this means.
+	    
+	4.	The fonts are now installed and will appear in the font menus of your Carbon and native applications.
+
+Linux (e.g Ubuntu and most other distros)
+	Installing fonts in Linux is very simple. You should have a folder in your HOME directory named .fonts -- if this is not already present, you can simply create the directory (mkdir ~/.fonts) then copy the font file(s) into this folder.
+	You font should now show up in application menus. There are other font installers for Linux, but this method is probably the simplest approach.
+	If you wish your font to be available to all user accounts, copying the font file to folder: /usr/share/fonts might be be best location.
+	
+	If your font does not immediately show up in your application menus, opening a terminal and typing: sudo fc-cache -f -v
+	
+	This will force the font cache to be refreshed. Now the font name will be available to applications.
+	
+	
 
 
 INSTALLING FONTS IN WINDOWS
@@ -50,30 +78,3 @@ Windows 2000
 	5.	Press the “OK” button to install the fonts.
 	6.	Close the Fonts control panel when you are finished. The fonts are now installed and will appear in the font menus of your applications.
 
-MAC OS X FOR NATIVE APPLICATIONS
-
-Mac OS X has native support for Type 1 and OpenType fonts, which can be installed just like other font type on OS X. However, fonts installed in OS X system locations are not available to “Classic” applications (see section below). Fonts installed in the OS X native environment can be accessed by (a) any user or (b) just by an individual user.
-	1.	Before installing your fonts, quit all active applications.
-	2.	Locate the folder that contains the fonts you want to install.
-	3.	Copy or move all the font files from their individual font folders into either of the following locations:
-		(Note that the fonts must be loose in the destination folder, not in a subfolder.)
-			 (a) <Volume>/Library/Fonts/ 
-	    Note: you must be logged on as an “Administrator” to place fonts in this location. Fonts in this location can be used by any user. 
-	    	(b) <Volume>/Users/<username>/Library/Fonts/
-	     Note: fonts in this location can be used only by the specified user.
-	    
-	    An alternative is to use the Font Book application which comes with OS X ... simply type "font book" into Spotlight and click on the application.
-	    you will be able to preview and install fonts quickly and easily by this means.
-	    
-	4.	The fonts are now installed and will appear in the font menus of your Carbon and native applications.
-
-Linux (e.g Ubuntu and most other distros)
-	Installing fonts in Linux is very simple. You should have a folder in your HOME directory named .fonts -- if this is not already present, you can simply create the directory (mkdir ~/.fonts) then copy the font file(s) into this folder.
-	You font should now show up in application menus. There are other font installers for Linux, but this method is probably the simplest approach.
-	If you wish your font to be available to all user accounts, copying the font file to folder: /usr/share/fonts might be be best location.
-	
-	If your font does not immediately show up in your application menus, opening a terminal and typing: sudo fc-cache -f -v
-	
-	This will force the font cache to be refreshed. Now the font name will be available to applications.
-	
-	
